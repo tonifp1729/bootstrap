@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Star Wars</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <!-- Se incluye el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* ESTILOS GENERALES */
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: #333;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+
+        h1 {
+            color: #FFD700;
+        }
+
+        .form-group label {
+            color: #FFD700;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* ESTILOS PARA LA CABECERA */
+        .header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-title {
+            color: #FFD700;
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ESTILOS DE NAVEGADOR */
+        .navbar {
+            background-color: #000;
+        }
+
+        .navbar-brand {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <h1 class="header-title">Renegade Squad</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://starwars.fandom.com/es/wiki/Portada">Wiki</a>
+            <!-- Botón de alternar para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenido del menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Enlaces del menú de navegación -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/search?q=star+wars+2024+&sca_esv=c3f69c090f238cd5&rlz=1C1CHBD_esES1035ES1035&biw=1536&bih=738&tbm=nws&ei=XnXxZbPiNvbjkdUP8qSOkAY&ved=0ahUKEwizib3p-fCEAxX2caQEHXKSA2IQ4dUDCA0&uact=5&oq=star+wars+2024+&gs_lp=Egxnd3Mtd2l6LW5ld3MiD3N0YXIgd2FycyAyMDI0IDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIiihQ4g1YvRpwAHgAkAEAmAFnoAHuBKoBAzYuMbgBA8gBAPgBAZgCB6AC_gTCAg0QABiABBiKBRhDGLEDwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAZgDAIgGAZIHAzYuMaAH2yQ&sclient=gws-wiz-news&safe=active&ssui=on">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fundacionloyola.com/vguadalupe/contacto/">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h1 class="text-center mb-4">Encuesta de Star Wars</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <!-- Input de texto con estilo de Bootstrap -->
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <!-- Input de email con estilo de Bootstrap -->
+                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="pelicula_favorita">¿Cuál es tu película favorita de Star Wars?</label>
+                <!-- Input de texto con estilo de Bootstrap -->
+                <input type="text" class="form-control" id="pelicula_favorita"
+                    placeholder="Ingresa tu película favorita">
+            </div>
+            <div class="form-group">
+                <label for="personaje_favorito">¿Quién es tu personaje favorito de Star Wars?</label>
+                <!-- Input de texto con estilo de Bootstrap -->
+                <input type="text" class="form-control" id="personaje_favorito"
+                    placeholder="Ingresa tu personaje favorito">
+            </div>
+            <div class="form-group">
+                <label for="lado_favorito">¿Qué lado de la Fuerza prefieres?</label>
+                <!-- Selección de opción con estilo de Bootstrap -->
+                <select class="form-control" id="lado_favorito">
+                    <option>El Lado Luminoso</option>
+                    <option>El Lado Oscuro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="opinion">¿Cuál es tu opinión sobre los nuevos episodios de Star Wars?</label>
+                <!-- Área de texto con estilo de Bootstrap -->
+                <textarea class="form-control" id="opinion" rows="3" placeholder="Escribe tu opinión"></textarea>
+            </div>
+            <!-- Botón de envío con estilo de Bootstrap -->
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
